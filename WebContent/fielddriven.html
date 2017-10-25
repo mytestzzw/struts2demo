@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/struts2demo/fielddriven">
+        <!-- field driven 1 -->
+		账号1:<input type="text" name='account'/><br/>
+		密码1:<input type="password" name='password'/><br/>
+		<!-- field driven 2 -->
+		账号2:<input type="text" name='user.account'/><br/>
+		密码2:<input type="password" name='user.password'/><br/>
+		
+		<input type="submit" value="submit"/>
+	</form>
+</body>
+</html>

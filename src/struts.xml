@@ -11,6 +11,10 @@
         <action name="helloworld" class="L0.HelloWorldAction">
             <result name= "success">/helloworld.html</result>
         </action>
+        
+         <action name="fielddriven" class="L1.FieldDrivenAction">
+             <result name= "success">/fielddriven2.jsp</result>
+         </action>
     </package>
 
 
