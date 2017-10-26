@@ -39,12 +39,15 @@
         </action>
     </package>
     
-    <package name="L2" extends="struts-default" namespace="/">
+    <package name="L2" extends="struts-default" namespace="/result">
         <global-results>
             <result name="testglobalresult">/testglobalresult.html</result>
         </global-results>
         <action name="testglobalresult" class="L2.TestGlobalResultAction">
         
+        </action>
+        <action name="*_*_*_*" class="L2.{1}Action" method="{2}">
+            <result name="{3}">/${folder}/{4}.html</result>
         </action>
     </package>
 	
