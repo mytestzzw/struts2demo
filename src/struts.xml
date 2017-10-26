@@ -16,8 +16,12 @@
              <result name= "success">/fielddriven2.jsp</result>
          </action>
          
-          <action name="modeldriven" class="L1.ModelDrivenAction">
+         <action name="modeldriven" class="L1.ModelDrivenAction">
              <result name= "success">/modeldriven2.jsp</result>
+         </action>
+         
+         <action name="multiplepass" class="L1.MultiplePass">
+             <result name= "success">/index.html</result>
          </action>
     </package>
 
