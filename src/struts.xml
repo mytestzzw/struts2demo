@@ -42,7 +42,11 @@
     <package name="L2" extends="struts-default" namespace="/result">
         <global-results>
             <result name="testglobalresult">/testglobalresult.html</result>
+             <result name="globalexception">/error.html</result>
         </global-results>
+        <global-exception-mappings>
+            <exception-mapping result="globalexception" exception="java.lang.Exception"></exception-mapping>
+        </global-exception-mappings>
         <action name="testglobalresult" class="L2.TestGlobalResultAction">
         
         </action>
@@ -53,6 +57,10 @@
         <action name="testlocalexception" class="L2.TestLocalExceptionAction">
             <exception-mapping result="math-exception" exception="java.lang.ArithmeticException"></exception-mapping>
             <result name="math-exception">/error.html</result>
+        </action>
+        
+        <action name="testglobalexception" class="L2.TestGlobalException">
+           
         </action>
     </package>
 	
