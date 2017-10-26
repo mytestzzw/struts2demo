@@ -62,6 +62,10 @@
         <action name="testglobalexception" class="L2.TestGlobalException">
            
         </action>
+        
+        <action name="testpreresultlistener" class="L2.TestPreResultListenerAction">
+            <result name="success">/index.html</result>
+        </action>
     </package>
 	
 	<include file="sturts-testmudle.xml"></include>
