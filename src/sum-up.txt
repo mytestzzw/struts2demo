@@ -1,0 +1,12 @@
+L1 sum-up:
+一、参数传递到action方式
+    1、field driven(基本类型,对象类型)
+    2、model driven(必须手动new对象实例;继承Modeldriven接口;在getModel方法返回对象实例)
+二、多重值传递
+    1、数组
+    2、集合(元素为基本类型)
+    3、集合(元素为对象,要用索引指定对应元素,如user[0].account,没有索引则为不同元素)
+三、package namespace
+四、struts-xxx.xml module(要在struts。xml里面include)
+五、action通配符*
+六、每个请求会生成一个不同的action实例
