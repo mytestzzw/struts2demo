@@ -30,5 +30,6 @@
             <result name= "success">/index.html</result>
         </action>
     </package>
-
+	
+	<include file="sturts-testmudle.xml"></include>
 </struts>
