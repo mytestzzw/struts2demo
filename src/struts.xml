@@ -25,6 +25,10 @@
          </action>
     </package>
 
-
+    <package name="testnamespace" namespace="/testnamespace" extends="struts-default">
+        <action name="testnamespace" class="L1.TestNamespace">
+            <result name= "success">/index.html</result>
+        </action>
+    </package>
 
 </struts>
