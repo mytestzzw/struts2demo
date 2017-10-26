@@ -27,6 +27,10 @@
          <action name="*_*" class="L1.{1}Action" method="{2}">
              <result name= "success">/index.html</result>
          </action>
+         
+         <action name="testdefaultactionclass">
+             <result>/WEB-INF/testdefaultactionclass.html</result>
+         </action>
     </package>
 
     <package name="testnamespace" namespace="/testnamespace" extends="struts-default">
