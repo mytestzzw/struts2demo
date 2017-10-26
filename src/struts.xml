@@ -40,6 +40,9 @@
     </package>
     
     <package name="L2" extends="struts-default" namespace="/result">
+        <result-types>
+            <result-type name="myresult" class="L2.MyCustomResult" default="false"></result-type>
+        </result-types>
         <global-results>
             <result name="testglobalresult">/testglobalresult.html</result>
              <result name="globalexception">/error.html</result>
@@ -65,6 +68,10 @@
         
         <action name="testpreresultlistener" class="L2.TestPreResultListenerAction">
             <result name="success">/index.html</result>
+        </action>
+        
+        <action name="testcustomresult" class="L2.TestCustomResultAction">
+            <result type="myresult" name="aaa">/index.html</result>
         </action>
     </package>
 	
