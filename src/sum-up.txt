@@ -10,3 +10,10 @@ L1 sum-up:
 四、struts-xxx.xml module(要在struts。xml里面include)
 五、action通配符*
 六、每个请求会生成一个不同的action实例
+
+L2 sum-up:
+一、global results
+二、result通配符，xml文件result配置取值
+三、局部exception,全局exception
+四、preresultlistener (ActionContext.getContext().getActionInvocation.addPreResultListener(pr)  )
+五、自定义result (继承Result接口,然后注册)
