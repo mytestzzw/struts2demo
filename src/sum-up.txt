@@ -17,3 +17,6 @@ L2 sum-up:
 三、局部exception,全局exception
 四、preresultlistener (ActionContext.getContext().getActionInvocation.addPreResultListener(pr)  )
 五、自定义result (继承Result接口,然后注册)
+
+L3 sum-up:
+一、自定义拦截器(action前,result后)
