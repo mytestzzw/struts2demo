@@ -73,6 +73,32 @@
         <action name="testcustomresult" class="L2.TestCustomResultAction">
             <result type="myresult" name="aaa">/index.html</result>
         </action>
+        
+    </package>
+    
+    <package name="L3" extends="struts-default" namespace="/interceptor">
+        <result-types>
+            <result-type name="myresult" class="L3.MyResult" default="false"></result-type>
+        </result-types>
+        <interceptors>
+            <interceptor name="myinterceptor" class="L3.MyInterceptor"></interceptor>
+            
+            <interceptor-stack name="myinterceptorstack">
+                <interceptor-ref name="myinterceptor">
+                    <param name="myInterceptorparam">god</param>
+                 </interceptor-ref>
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="myinterceptorstack"></default-interceptor-ref>
+        
+        <global-results>
+            <result type="myresult" name="success">/index.html</result>
+        </global-results>
+        <action name="testmyinterceptor" class="L3.TestMyInterceptorAction">
+        
+        </action>
+  
     </package>
 	
 	<include file="sturts-testmudle.xml"></include>
