@@ -20,3 +20,41 @@ L2 sum-up:
 
 L3 sum-up:
 一、自定义拦截器(action前,result后)
+
+L4 sum_up
+一、value stack
+    1、action实例
+    2、OGNL表达式运算值
+    3、OGNL运算中间值
+二、ActionContext
+    1、每个线程一个独立ActionContext(使用TreadLocal),保证线程安全
+    2、Request的Parameters(非连动)
+    3、Request的Attribute(一个Map,连动)
+    4、Session的Attribute(一个Map,连动)
+    5、Application的Attribute(一个Map,连动)
+    6、value stack
+    7、attr(page-->request-->session-->application)
+三、获取ActionContext
+    1、ActionContext.getContext() (静态方法)
+    2、actionInvocation.getInvocationContext() (需要actionInvocation对象)
+四、使用ActionContext
+    1、很多get和set,获取和设置
+五、使用value stack
+    1、通过OGNL访问,即struts2的标签
+    2、也可以编码操作findValue,setValue,peek,pop,push
+六、OGNL访问ActionContext
+    1、#
+七、OGNL访问静态属性
+    1、@全限定名。属性,@全限定名。方法
+    2、<constant name="struts.ognl.allowStaticMethodAcess" value="true"> 开启允许访问静态方法
+八、OGNL访问属性
+    1、基本类型,对象类型
+    2、访问时优先getter/setter优先,注意属性访问权限
+    3、数组,list,map
+    4、length,size等
+九、XXXAware接口
+    1、通过IOC/DI注入Action属性XXX,通过servletConfig拦截器实现
+十、ServletActionContext
+    1、直接继承ActonContext
+    2、通过静态方法获取servlet相关对象(比如getRequest)
+    3、ServletXXXAware接口
