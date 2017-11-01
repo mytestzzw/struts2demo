@@ -101,5 +101,16 @@
   
     </package>
 	
+	<package name="LX01" extends="struts-default" namespace="/upload">
+	    <action name="testupload" class="LX01.MyUploadAction">
+	    <interceptor-ref name="defaultStack">
+	        <param name="fileUpload.allowedTypes">image/bmp</param>
+	        <param name="fileUpload.maximumSize">1000</param>
+	    </interceptor-ref>
+	        <result name="input">/upload.jsp</result>
+	        <result name="success">/index.html</result>
+	    </action>
+	</package>
+	
 	<include file="sturts-testmudle.xml"></include>
 </struts>
