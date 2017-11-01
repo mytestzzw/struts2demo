@@ -113,7 +113,7 @@
 	    
 	    <action name="testdownload" class="LX01.MyDownloadAction">
 	        <result type="stream">
-	            <param name="contentDisposition">attachment;filename=${fileName}</param>
+	            <!-- <param name="contentDisposition">attachment;filename=${fileName}</param> -->
 	        </result>
 	    </action>
 	</package>

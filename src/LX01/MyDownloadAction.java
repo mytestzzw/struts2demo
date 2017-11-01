@@ -15,4 +15,8 @@ public class MyDownloadAction extends ActionSupport {
 	public String getFileName() {
 		return "firstName.txt";
 	}
+	
+	public String getContentDisposition() {
+		return "attachment;filename=\"secondName.txt\"";
+	}
 }
