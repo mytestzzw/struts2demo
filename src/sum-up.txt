@@ -58,3 +58,19 @@ L4 sum_up
     1、直接继承ActonContext
     2、通过静态方法获取servlet相关对象(比如getRequest)
     3、ServletXXXAware接口
+    
+LX01 sum-up
+一、上传
+    struts2拦截器fileUpload自动映射上传文件,文件名,文件类型(XXX,XXXFileName,XXXContentType)  
+二、下载
+    result类型为stream,action里面不需要execute()方法，而需要getInputStream()方法返回一个InputStream
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
