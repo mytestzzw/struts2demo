@@ -11,5 +11,8 @@ public class MyDownloadAction extends ActionSupport {
 	public InputStream getInputStream() throws Exception {
 		return new FileInputStream(new File("e:/mmm.txt"));
 	}
-
+    
+	public String getFileName() {
+		return "firstName.txt";
+	}
 }
